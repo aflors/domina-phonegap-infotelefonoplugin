@@ -1,8 +1,8 @@
 cordova.define("com.javiermoreno.phonegap.InfoTelefono", function(require, exports, module) {
 
-function InfoTelefono() {
-
+var InfoTelefono = function() {
 }
+
 InfoTelefono.prototype.numero = null;
 	
 
