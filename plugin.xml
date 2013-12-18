@@ -24,6 +24,9 @@
                        value="com.javiermoreno.phonegap.InfoTelefonoPlugin"/>
             </feature>
         </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+           <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
 
         <source-file src="src/android/com/javiermoreno/phonegap/InfoTelefonoPlugin.java" 
                      target-dir="src/com/javiermoreno/phonegap" />      
