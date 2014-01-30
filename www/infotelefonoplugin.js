@@ -1,4 +1,4 @@
-cordova.define("com.javiermoreno.phonegap.infotelefonoplugin", function(require, exports, module) {
+//cordova.define("com.javiermoreno.phonegap.infotelefonoplugin", function(require, exports, module) {
 
 // https://github.com/apache/cordova-js/tree/master/src
 var exec = require('cordova/exec'),
@@ -19,4 +19,4 @@ var exec = require('cordova/exec'),
     console.info('Objeto exportado: ', instancia);
     
     module.exports = instancia;
-});
+//});
