@@ -2,7 +2,7 @@ cordova.define("com.javiermoreno.phonegap.infotelefonoplugin", function(require,
 
 // https://github.com/apache/cordova-js/tree/master/src
 var exec = require('cordova/exec'),
-    var InfoTelefono = require('./InfoTelefono');
+    InfoTelefono = require('./InfoTelefono');
 
 	var InfoTelefonoPlugin = function() {
 	}
