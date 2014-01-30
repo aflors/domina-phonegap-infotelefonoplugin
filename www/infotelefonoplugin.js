@@ -8,7 +8,7 @@ function InfoTelefonoPlugin(){
 
 InfoTelefonoPlugin.prototype.obtenerInfo = function(successCallback,failureCallback) {
  exec(successCallback, failureCallback, 
-      'InfoTelefonoPlugin', 'ACCION_OBTENER_TELEFONO', []);
+      'infotelefonoplugin', 'ACCION_OBTENER_TELEFONO', []);
 	
 }
 
