@@ -12,7 +12,7 @@
     <js-module src="www/infotelefonoplugin.js"  name="infotelefonoplugin">
         <clobbers target="window.telefono" />
     </js-module>
-    <js-module src="www/InfoTelefono.js"  name="infotelefonopluginInfoTelefono">
+    <js-module src="www/InfoTelefono.js"  name="InfoTelefono">
         <clobbers target="InfoTelefono" />
     </js-module>
 
