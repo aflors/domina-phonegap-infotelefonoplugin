@@ -4,8 +4,9 @@ cordova.define("com.javiermoreno.phonegap.infotelefonoplugin", function(require,
 var exec = require('cordova/exec'),
     InfoTelefono = require('./InfoTelefono');
 
-    console.debug('Registrando plugin InfoTelefono.');	
-    var InfoTelefonoPlugin = function() {
+    console.info('Registrando plugin InfoTelefono.');	
+
+    function InfoTelefonoPlugin(){
     }
 	
     InfoTelefonoPlugin.prototype.obtenerInfo = function(successCallback,failureCallback) {
@@ -15,7 +16,7 @@ var exec = require('cordova/exec'),
     }
 	
     var instancia = new InfoTelefonoPlugin();
-    console.log('Objeto exportado: ', instancia);
+    console.info('Objeto exportado: ', instancia);
     
     module.exports = instancia;
 });
