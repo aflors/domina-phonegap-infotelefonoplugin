@@ -1,19 +1,14 @@
-var exec = require('cordova/exec'),
-    InfoTelefono = require('./InfoTelefono');
+var exec = require('cordova/exec');
 
 console.info('Registrando plugin InfoTelefono.');	
 
-function InfoTelefonoPlugin(){
+var instancia = {
+	InfoTelefonoPlugin : function(successCallback,failureCallback) {
+	 exec(successCallback, failureCallback, 
+	      'infotelefonoplugin', 'ACCION_OBTENER_TELEFONO', []);
+		
+	}
 }
-
-InfoTelefonoPlugin.prototype.obtenerInfo = function(successCallback,failureCallback) {
- exec(successCallback, failureCallback, 
-      'infotelefonoplugin', 'ACCION_OBTENER_TELEFONO', []);
-	
-}
-
-var instancia = new InfoTelefonoPlugin();
-console.info('Objeto exportado: ', instancia);
 
 module.exports = instancia;
 
