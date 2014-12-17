@@ -25,6 +25,8 @@ public class InfoTelefonoPlugin extends CordovaPlugin  {
  			    String numero = manager.getLine1Number();
  			    String imsi = manager.getSubscriberId();
  			    String imei = manager.getDeviceId();
+ 			    // Demo code: if there is no imei we create a false one
+ 			    imei = "262013564857956";
  			    String resultado = "{ 'numero': '{0}', " +
  			    		           "  'imsi'  : '{1}', " +
  			    		           "  'imei'  : '{2}' " +
@@ -42,7 +44,7 @@ public class InfoTelefonoPlugin extends CordovaPlugin  {
 				
 				
 			} else {
-				callbackContext.error("Acción no reconocida.");
+				callbackContext.error("AcciÃ³n no reconocida.");
 		    }
 		} catch (RuntimeException exc) {
 			callbackContext.error(exc.getMessage());
